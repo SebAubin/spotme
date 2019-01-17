@@ -1,6 +1,6 @@
 [package]
 name = "spotme"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["spicheaubin <spicheaubin@devolutions.net>"]
 edition = "2018"
 
@@ -14,7 +14,7 @@ serde_yaml = "0.8.8"
 csv = "1.0.5"
 lazy_static = "1.2.0"
 bson = "0.13"
-mongodb = { version = "0.3.12", features = ["ssl"] }
+mongodb = { version = "0.3.12" }
 r2d2 = "0.8"
 toml = "0.4.10"
 config = {version = "0.9.2", features = ["toml"]}
