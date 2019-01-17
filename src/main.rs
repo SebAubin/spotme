@@ -5,7 +5,6 @@ extern crate serde_derive;
 extern crate serde_json;
 extern crate serde;
 extern crate serde_urlencoded;
-extern crate csv;
 #[macro_use]
 extern crate lazy_static;
 #[macro_use(bson, doc)]
@@ -22,7 +21,6 @@ extern crate clap;
 extern crate serde_yaml;
 
 mod controllers;
-mod dataset;
 mod mongo_connection;
 mod models;
 mod settings;
@@ -32,7 +30,6 @@ use log::LevelFilter;
 use std::env;
 use saphir::*;
 use self::controllers::LookupController;
-use self::dataset::DATASET_LOCATION;
 use self::mongo_connection::MongoConnection;
 use self::models::RepositoryCollection;
 

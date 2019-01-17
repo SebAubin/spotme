@@ -3,7 +3,6 @@ use saphir::Method;
 use serde_urlencoded::from_str;
 use std::net::SocketAddr;
 use std::str::FromStr;
-use crate::dataset::DATASET_LOCATION;
 use crate::models::RepositoryCollection;
 use crate::models::Repository;
 use crate::models::ip::Ip;

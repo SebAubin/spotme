@@ -72,16 +72,8 @@ mod r2d2_mongo {
             let pass = self.parsed_conn_string.password.clone();
             let db_name = DATABASE_NAME.to_string();
 
-            let client_options = match self.parsed_conn_string.options.clone().and_then(|options| {
-                options.options.get("ssl").cloned()
-            }) {
-                Some(ref value) if value.eq("true") => {
-                    ClientOptions::with_unauthenticated_ssl(None, false)
-                }
-                _ => {
-                    ClientOptions::new()
-                }
-            };
+            let client_options = ClientOptions::new();
+
             let client = Client::connect_with_options(&host, port, client_options).expect("Bad client");
 
             if let (Some(username), Some(password)) = (user, pass) {

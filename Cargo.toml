@@ -11,7 +11,6 @@ serde_derive = "1.0"
 serde_json = "1.0"
 serde_urlencoded = "0.5.4"
 serde_yaml = "0.8.8"
-csv = "1.0.5"
 lazy_static = "1.2.0"
 bson = "0.13"
 mongodb = { version = "0.3.12" }
